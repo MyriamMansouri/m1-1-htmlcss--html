@@ -1,1 +1,67 @@
 <!-- ...crickets... -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Registration form</h1>
+        <form>
+            <div>
+                <label for="fname">Username</label>
+                <input type="text" id="fname" name="fname" required>
+                <label for="fpassword">Password</label>
+                <input type="password" id="fpassword" name="fpassword">
+            </div>
+            <div>
+                <label for="femail">Email</label>
+                <input type="email" id="femail" name="femail">
+            </div>
+            <div>
+                <p>Which taxi do you require?</p>
+                <div>
+                    <input type="radio" id="fcar" name="ftype" value="car">
+                    <label for="fcar">Car</label>
+                </div>
+                <div>
+                    <input type="radio" id="fvan" name="ftype" value="van">
+                    <label for="fvan">Van</label>
+                </div>
+                <div>
+                    <input type="radio" id="ftuktuk" name="ftype" value="tuktuk">
+                    <label for="ftuktuk">Tuktuk</label>
+                </div>
+
+            </div>
+            <div>
+                <p>Extras</p>
+                <div>
+                    <input type="checkbox" id="fbabyseat" name="fextra" value="babyseat">
+                    <label for="fbabyseat">Baby Seat</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="fwheelchairaccess" name="fextra" value="wheelchairaccess">
+                    <label for="fwheelchairaccess">Wheelchair Access</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="fstocktip" name="fextra" value="stocktip">
+                    <label for="fstocktip">Stock Tip</label>
+                </div>
+            </div>
+
+            <div>
+            <label for="fpickup">Pickup</label>            
+            <select id="fpickup" name="fpickup">
+                <option value="selectone" selected disabled>Select One</option>
+                <option value="taxioffice">Taxi Office</option>
+                <option value="townhall">Town Hall</option>
+                <option value="wellguess">We'll guess</option>
+            </select>
+
+            </div>
+            <div>
+                <label for="fspecial">Special</label> 
+                <textarea id="fspecial" name="fspecial"></textarea>
+            </div>
+            <button>Submit</button>
+        
+        </form>
+    </body>
+</html>
